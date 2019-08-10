@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long  lon;
+int main()
+{
+    lon money,disc,t;
+    cin>>money>>disc;
+    lon tot=money;
+    while(1)
+    {
+        t=(money*disc)/100;
+        if (t==0)
+        {
+            break;
+        }
+    money-=t;
+    tot+=money;
+    }
+    cout<<tot<<'\n';
+}
